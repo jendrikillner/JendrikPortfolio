@@ -4,16 +4,54 @@
   font-weight: <weight>;
   font-style: normal;
 }*/
-
+:root {
+  --primary-color: #202124;
+  --secondary-color: aliceblue;
+  --font-family-title: "Spline Sans", sans-serif;
+  --font-family-subtitle: "Spline Sans Mono", monospace;
+  --font-family-text: "Inter", sans-serif;
+}
 body {
-  background-color: #202124;
+  background-color: var(--primary-color);
 }
-h1 {
-  color: aliceblue;
-  font-family: "Spline Sans", sans-serif;
-  font-size: 180px;
+.primary-section {
+  text-align: center;
+  padding: 130px 20px;
 }
-p {
+
+.primary-section h1 {
+  color: var(--secondary-color);
+  font-family: var(--font-family-title);
+  font-size: 140px;
+  letter-spacing: 8px;
+}
+.primary-section h3 {
   color: aliceblue;
-  font-family: "Spline Sans Mono", monospace;
+  font-family: var(--font-family-title);
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.btn-branding {
+  background-color: var(--secondary-color);
+  max-width: 130px;
+  color: var(--primary-color);
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-family: var(--font-family-title);
+  border: 1px solid var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.btn-branding:hover {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 1px 1px rgba(0, 0, 0, 0.075);
 }
