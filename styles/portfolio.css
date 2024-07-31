@@ -11,12 +11,10 @@
   --font-family-subtitle: "Spline Sans Mono", monospace;
   --font-family-text: "Inter", sans-serif;
 }
-body {
-  background-color: var(--primary-color);
-}
 .primary-section {
   text-align: center;
   padding: 130px 20px;
+  background-color: var(--primary-color);
 }
 
 .primary-section h1 {
