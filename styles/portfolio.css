@@ -1,0 +1,19 @@
+/* .spline-sans-<uniquifier> {
+  font-family: "Spline Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+body {
+  background-color: #202124;
+}
+h1 {
+  color: aliceblue;
+  font-family: "Spline Sans", sans-serif;
+  font-size: 180px;
+}
+p {
+  color: aliceblue;
+  font-family: "Spline Sans Mono", monospace;
+}
