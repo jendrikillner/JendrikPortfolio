@@ -242,6 +242,12 @@
   .col-8 {
     order: 8;
   }
+  .col-9 {
+    order: 2;
+  }
+  .col-10 {
+    order: 1;
+  }
 
   .about-section h1,
   .contact-section h1 {
