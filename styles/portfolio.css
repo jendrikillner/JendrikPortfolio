@@ -320,6 +320,10 @@
     font-size: 12px;
   }
 
+  .footer-follow-me-links a {
+    font-size: 32px;
+  }
+
   .database-content h1 {
     font-size: 30px;
   }
