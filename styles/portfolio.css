@@ -174,6 +174,74 @@
   padding-left: 100px;
 }
 
+.share-box {
+  text-align: center;
+}
+
+.share {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+
+.share li {
+  display: inline-block;
+}
+
+.share a {
+  color: var(--primary-color);
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.share a:hover {
+  color: var(--secondary-color);
+}
+
+.share a .fa {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.share a:hover .fa {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.article-tags {
+  margin-top: 10px;
+  font-family: var(--font-family-text);
+  color: var(--primary-color);
+}
+
+.article-tags i {
+  margin-right: 5px;
+}
+
+.article-tags a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-right: 5px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.article-tags a:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
 .footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -228,6 +296,174 @@
   width: 100%;
   height: 15vw;
   object-fit: cover;
+}
+
+.article-container {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.article h1 {
+  color: var(--primary-color);
+  font-family: var(--font-family-title);
+  font-size: 50px;
+  letter-spacing: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.article-metadata {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.article-style {
+  color: var(--primary-color);
+  font-family: var(--font-family-text);
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.article-style p {
+  margin-bottom: 20px;
+}
+
+.article-style h2 {
+  color: var(--primary-color);
+  font-family: var(--font-family-title);
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.article-style h3 {
+  color: var(--primary-color);
+  font-family: var(--font-family-subtitle);
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.article-style a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.article-style a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+.article-style img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.article-style blockquote {
+  border-left: 5px solid var(--primary-color);
+  padding-left: 20px;
+  margin-left: 0;
+  color: var(--primary-color);
+  font-family: var(--font-family-text);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.article-style code {
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+  font-family: var(--font-family-subtitle);
+  font-size: 16px;
+}
+
+.article-style pre {
+  background-color: #f5f5f5;
+  padding: 10px;
+  font-family: var(--font-family-subtitle);
+  font-size: 16px;
+  overflow-x: auto;
+}
+
+.article-footer {
+  margin-top: 20px;
+  font-family: var(--font-family-text);
+  color: var(--primary-color);
+}
+
+.article-footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.article-footer a:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.section-pager {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.pager {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.pager li {
+  display: inline-block;
+}
+
+.pager a {
+  color: var(--primary-color);
+  font-family: var(--font-family-text);
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.pager a:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+@media (max-width: 990px) {
+
+  .article-container {
+    width: 100%;
+  }
+
+  .article h1 {
+    font-size: 35px;
+  }
+
+  .article-style h2 {
+    font-size: 25px;
+  }
+
+  .article-style h3 {
+    font-size: 30px;
+  }
+
+  .article-style p {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 990px) {
